@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-sidebar w3-bar-block w3-display-container w3-animate-left" style="width:50%; display:none;"id="side_bar">
+        <button class="w3-btn w3-xxlarge w3-bar-item" onclick="hide()">&times;</button>       
+                       
+            <a href="investment.html"class="w3-button w3-bar-item">Investment</a>
+            <button onclick="alert(
+'Sorry, you do not have sufficient fund to place a withdrawal.The minimum amount is $100')" class="w3-button w3-bar-item">withdrawal</button>
+            <a href="index.html"class="w3-button w3-bar-item">Logout</a>
+       
+    </div>
+    <div class="w3-container w3-purple">
+        <button class="w3-btn w3-xxlarge"onclick="show()">&cong;</button>
+        <h1 class="w3-center">AJ Investment</h1>
+    </div>
+    <div class="w3-card-4 w3-margin w3-center">
+        <h2>Amount Invested</h2>
+        <p class="w3-xlarge">$0.00</p>
+        <hr/>
+        <h2>Amount Gained</h2>
+        <p class="w3-xlarge">$0.00</p>
+        <hr/>
+        <h2>Amount Withdrawn</h2>      
+        <p class="w3-xlarge">$0.00</p>
+        <hr/>
+        <h2>Avaliable Balance</h2>
+        <p class="w3-xlarge">$0.00</p>
+    </div>
+    <script>
+        function show() {
+            var sideBar = document.getElementById("side_bar")
+            sideBar.style.display="block"
+        }
+        function hide() {
+            var sideBar = document.getElementById("side_bar")
+            sideBar.style.display="none"
+        }
+        
+    </script>
+</body>
+</html>
